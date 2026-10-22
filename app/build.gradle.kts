@@ -9,7 +9,15 @@ android {
         version = release(37)
     }
 
+    defaultConfig {
+        applicationId = "com.example.pertemuan6"
+        minSdk = 24
+        targetSdk = 37
+        versionCode = 1
+        versionName = "1.0"
 
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
 
 
 }
