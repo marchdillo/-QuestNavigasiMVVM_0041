@@ -3,3 +3,14 @@ plugins {
     alias(libs.plugins.kotlin.compose)
 }
 
+android {
+    namespace = "com.example.pertemuan6"
+    compileSdk {
+        version = release(37)
+    }
+
+
+
+
+}
+
