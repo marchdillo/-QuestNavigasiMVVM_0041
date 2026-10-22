@@ -33,5 +33,16 @@ fun FormIsian(
     jenisK:List<String> = listOf("Laki-laki","Perempuan"),
     OnSubmitBtnClick : () -> Unit
 ){
-
+    Scaffold(modifier = Modifier,
+        {
+            TopAppBar(
+                title = {Text(stringResource(R.string.home), color = Color.White)},
+                colors = TopAppBarDefaults.mediumTopAppBarColors(
+                    colorResource(R.color.teal_700))
+            )}
+    ){ isiRuang ->
+        Column(modifier = Modifier.padding(isiRuang),
+            verticalArrangement = Arrangement.Top,
+            horizontalAlignment = Alignment.CenterHorizontally)
+    }
 }
